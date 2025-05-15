@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolyo | Bilal</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav">
+            <h1 class="nav__logo">Bilal Habeş</h1>
+
+            <!-- Mobil Menü Butonu -->
+            <div id="nav-toggle" class="nav__toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+            <ul class="nav__list" id="nav-menu">
+                <li><a href="#home" class="nav__link">Ana Sayfa</a></li>
+                <li><a href="#about" class="nav__link">Hakkımda</a></li>
+                <li><a href="#skills" class="nav__link">Yetenekler</a></li>
+                <li><a href="#projects" class="nav__link">Projeler</a></li>
+                <li><a href="#contact" class="nav__link">İletişim</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero / Giriş -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Merhaba, ben <span>Bilal Habeş</span></h1>
+            <p>Elektronik Teknolojisi öğrencisiyim.</p>
+            <a href="#contact" class="btn">İletişime Geç</a>
+        </div>
+    </section>
+
+    <!-- Hakkımda -->
+    <section id="about">
+        <h2 class="section-title">Hakkımda</h2>
+        <div class="container about">
+            <img src="assets/img/about.jpg" alt="Profil Fotoğrafı" />
+            <p>Ben Bilal Habeş, Elektronik Teknolojisi öğrencisiyim. Elektronik sistemler ve proje geliştirme konularına ilgi duyuyorum. Bitirme projemde Mars Rover yapıyorum.</p>
+        </div>
+    </section>
+
+    <!-- Yetenekler -->
+    <section id="skills">
+        <h2 class="section-title">Yetenekler</h2>
+        <div class="container skills">
+            <div class="skill-box">
+                <h3>Devre Tasarımları</h3>
+            </div>
+            <div class="skill-box">
+                <h3>Robotik Sistemler</h3>
+            </div>
+            <div class="skill-box">
+                <h3>Lehimleme ve PCB Montajı</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projeler -->
+    <section id="projects">
+        <h2 class="section-title">Projeler</h2>
+        <div class="container projects">
+            <div class="project">
+                <img src="assets/img/work1.jpg" alt="Proje 1" />
+            </div>
+            <div class="project">
+                <img src="assets/img/work2.jpg" alt="Proje 2" />
+            </div>
+            <div class="project">
+                <img src="assets/img/work3.jpg" alt="Proje 3" />
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim -->
+    <section id="contact">
+        <h2 class="section-title">İletişim</h2>
+        <div class="container contact">
+            <form action="#">
+                <input type="text" placeholder="Adınız" required />
+                <input type="email" placeholder="E-posta" required />
+                <textarea rows="6" placeholder="Mesajınız" required></textarea>
+                <input type="submit" class="btn" value="Gönder" />
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Bilal Habeş Tüm Hakları Saklıdır</p>
+    </footer>
+
+    <!-- JS dosyan ya da inline script buraya -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

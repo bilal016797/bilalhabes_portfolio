@@ -1,0 +1,249 @@
+/* Genel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    color: #222;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Navigasyon */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    font-size: 1.8rem;
+    color: #1e90ff;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav__list li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav__list li a:hover {
+    color: #000000;
+}
+
+/* Aktif Menü Linki */
+.active-link {
+    color: #1e90ff;
+    font-weight: 600;
+}
+
+/* Mobil Menü Butonu */
+.nav__toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Hero */
+.hero {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 6rem 1rem 4rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: slideUp 1s ease forwards;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.btn {
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #147cd6;
+}
+
+/* Bölüm Başlıkları */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 4rem 0 2rem;
+    color: #1e90ff;
+}
+
+/* Hakkımda */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.about img {
+    width: 220px;
+    border-radius: 10px;
+}
+
+/* Yetenekler */
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.skill-box {
+    background-color: #f1f1f1;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 180px;
+    transition: 0.3s;
+}
+
+.skill-box:hover {
+    transform: scale(1.05);
+    background-color: #eaf4ff;
+}
+
+.skill-box i {
+    font-size: 2rem;
+    color: #1e90ff;
+    margin-bottom: 0.5rem;
+}
+
+/* Projeler */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.project img:hover {
+    transform: scale(1.03);
+}
+
+/* İletişim */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.contact input,
+.contact textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+    border-color: #1e90ff;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+/* Animasyon Tanımı */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .nav__toggle {
+        display: block;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        display: none;
+        padding: 1rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        z-index: 999;
+    }
+
+    .nav__list.show {
+        display: flex;
+    }
+
+    .about {
+        padding: 0 1rem;
+    }
+}
